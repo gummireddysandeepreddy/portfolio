@@ -32,10 +32,10 @@ type ModeToggleProps = {
 export function ModeToggle({ isDesktop = true }: ModeToggleProps) {
   const { theme, setTheme, themes, systemTheme } = useTheme();
   const mounted = useMounted();
-  console.log("theme", theme);
-  console.log("setTheme", setTheme);
-  console.log("themes", themes);
-  console.log("systemTheme", systemTheme);
+  // console.log("theme", theme);
+  // console.log("setTheme", setTheme);
+  // console.log("themes", themes);
+  // console.log("systemTheme", systemTheme);
   return mounted ? (
     isDesktop ? (
       <Popover>
@@ -53,13 +53,7 @@ export function ModeToggle({ isDesktop = true }: ModeToggleProps) {
               <button
                 type="button"
                 key={option.value}
-                onClick={() => {setTheme(option.value)
-                  console.log("option.value", option.value);
-                  console.log("theme", theme);
-                  console.log("setTheme", setTheme);
-                  console.log("themes", themes);
-                  console.log("systemTheme", systemTheme); }
-                }
+                onClick={() => setTheme(option.value)}
                 className={cn(
                   "relative flex w-full cursor-default select-none items-center gap-2 rounded-sm px-3 py-1.5 text-sm outline-none transition-colors focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
                   theme === option.value && "bg-accent",
