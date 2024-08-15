@@ -11,8 +11,4 @@ export const Skills = [
         name: "Tools",
         list: ["AWS", "GCP", "Git", "GitHub", "MS Office", "Google Apps Script"],
     },
-    // {
-    //     name: "Concepts",
-    //     list: ["Cloud Computing", "Operating System", "Data Structures",],
-    // },
 ];

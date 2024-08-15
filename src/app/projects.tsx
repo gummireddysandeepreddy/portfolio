@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Projects() {
     return (
-    <div className="flex flex-col m-4 md:flex-row">
+    <div className="flex flex-col m-4 md:flex-row" id="projects">
       <ol>
         {P.map((project) => (
           <li key={project.title} className="h-auto w-auto my-5 justify-center items-center">

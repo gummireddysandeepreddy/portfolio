@@ -15,7 +15,7 @@ export default function Skills() {
                         <Parallax speed={-1} translateX={toggleA()} className='overflow-hidden'>
                             <p className='text-2xl font-mono overflow-hidden'>
                             {skill.list.map((s) => (
-                                <p key={s} className='inline-block'>{s}/</p>
+                                <span key={s}>{s}/</span>
                             ))}
                             </p>
                         </Parallax>
