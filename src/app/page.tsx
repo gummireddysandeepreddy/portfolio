@@ -1,19 +1,30 @@
-import Image from "next/image";
 import { Contact } from "./contact";
 import About from "./about";
 import Projects from "./projects";
+import { Provider } from "@/components/theme-provider";
+import { Toaster } from "sonner";
+import Header from "./header";
+import Blogs from "./blog";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-2 justify-center items-start">
-      <div className="sticky top-20 m-10">
-        <Contact />
+    <Provider>
+      <div className="flex top-1 sticky">
+        <Header />
       </div>
-      <div className="mr-10 pr-10 my-10 py-10">
-        <About />
-        <div className="font-bold text-2xl">Projects</div>
-        <Projects />
+      <div className="grid grid-cols-2 justify-center items-start">
+        <div className="sticky top-20 m-10">
+          <Contact />
+        </div>
+        <div className="mr-10 py-10">
+          <About />
+          <div className="font-bold text-2xl">Projects</div>
+          <Projects />
+          <div className="font-bold text-2xl">Blogs</div>
+          <Blogs />
+        </div>
       </div>
-    </div>
+      <Toaster richColors position="bottom-center" />
+    </Provider>
   );
 }

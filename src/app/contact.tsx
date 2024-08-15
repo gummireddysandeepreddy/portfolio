@@ -6,6 +6,7 @@ export function Contact() {
                 <p className="text-4xl">G Venkata Sandeep Reddy</p>
                 <p className="text-2xl">Cloud Engineer</p>
             </div>
+            
         </div>
     );
 }

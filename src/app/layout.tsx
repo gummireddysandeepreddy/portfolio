@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import { ModeToggle } from "@/components/toggle-theme";
-// import { Provider } from "@/components/theme-provider";
-// import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
 
 
@@ -21,12 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={cn(inter.className, "h-full", "bg-slate-600", "overflow", "text-white")}>
-          {children}
-        {/* <ModeToggle />
-        <Provider>
-          <Toaster richColors position="bottom-center" />
-        </Provider> */}
+      <body className={cn(inter.className, "h-full overflow")}>
+        {children}
       </body>
     </html>
   );
