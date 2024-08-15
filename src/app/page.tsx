@@ -1,3 +1,4 @@
+"use client";
 import { Contact } from "./contact";
 import About from "./about";
 import Projects from "./projects";
@@ -5,6 +6,8 @@ import { Provider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
 import Header from "./header";
 import Blogs from "./blog";
+import Skills from "./skills";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
   return (
@@ -18,6 +21,9 @@ export default function Home() {
         </div>
         <div className="mr-10 py-10">
           <About />
+          <ParallaxProvider>
+            <Skills />
+          </ParallaxProvider>
           <div className="font-bold text-2xl">Projects</div>
           <Projects />
           <div className="font-bold text-2xl">Blogs</div>

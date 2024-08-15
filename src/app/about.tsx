@@ -2,7 +2,7 @@
 
 export default function About() {
     return (
-        <div className="border-x-red-50 border-solid h-full m-auto">
+        <div className="border-x-red-50 border-solid h-full m-auto" id="about">
             <p className="p-2 justify-center m-1">
                 Driven by a passion for technology and innovation, 
                 I&apos;ve carved a path as a Cloud Engineer in software development. 
