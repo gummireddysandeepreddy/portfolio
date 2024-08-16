@@ -9,7 +9,7 @@ export default function Blogs() {
           <li key={project.title} className="h-auto w-auto my-5 justify-center items-center">
             <div className="flex flex-row">
               <div className="justify-center items-center m-1 h-7 w-24">
-                <Image src={project.image} alt={project.title} width={400} height={200}  className="h-12 w-auto" />
+                <Image src={project.image} alt={project.title} width={400} height={200} unoptimized className="h-12 w-auto" />
               </div>
               <div className="mx-2">
                 <a href={project.link} className="secondary">{project.title}</a>
