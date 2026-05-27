@@ -15,4 +15,8 @@ export const Nav = [
         title: "Blogs",
         link: "#blogs",
     },
+    {
+        title: "Contact",
+        link: "#contact",
+    },
 ];
