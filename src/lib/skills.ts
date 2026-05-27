@@ -1,5 +1,5 @@
 export const Skills = [
-    ["C", "Python", "JavaScript", "Java", "TypeScript", "HTML", "CSS"],
-    ["React", "Node", "Django", "Flask", "MySQL", "MongoDB", "SQLite"],
-    ["AWS", "GCP", "Git", "GitHub", "MS Office", "Google Apps Script"],
+    ["Python", "JavaScript", "Java", "C", "TypeScript", "HTML", "CSS"],
+    ["React", "Flask", "Node.js", "PySpark", "Apache Beam", "Kubernetes", "Terraform"],
+    ["AWS", "GCP", "MySQL", "MongoDB", "Git", "GitHub", "Salesforce", "Google Apps Script"],
 ];
