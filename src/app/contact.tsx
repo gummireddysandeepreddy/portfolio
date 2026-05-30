@@ -2,7 +2,7 @@ import { Nav } from '../lib/nav';
 import { Social } from '../lib/social';
 export function Contact() {
     return (
-        <div className="my-10 mx-2">
+        <div className="my-10 mx-2" id="contact">
             <div className="">
                 <p className="text-4xl">G Venkata Sandeep Reddy</p>
                 <p className="text-2xl">Cloud Engineer</p>

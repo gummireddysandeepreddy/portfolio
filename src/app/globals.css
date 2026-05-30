@@ -139,9 +139,9 @@
   }
 }
 
-@utilities {
+@layer utilities {
   .text-balance {
-    text-align:;
+    text-wrap: balance;
   }
 
   .text-pretty {

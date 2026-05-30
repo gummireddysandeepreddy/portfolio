@@ -2,8 +2,8 @@ import { Blogs as P } from "@/lib/blogs";
 import Image from "next/image";
 
 export default function Blogs() {
-    return (
-    <div className="flex flex-col m-4 md:flex-row" id="blogs">
+  return (
+    <div className="flex flex-col m-4 max-h-[300px] overflow-y-auto rounded-md p-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] md:flex-row" id="blogs">
       <ol>
         {P.map((project) => (
           <li key={project.title} className="h-auto w-auto my-5 justify-center items-center">
@@ -20,5 +20,5 @@ export default function Blogs() {
         ))}
       </ol>
     </div>
-    )
+  )
 }
